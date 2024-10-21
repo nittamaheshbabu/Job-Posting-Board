@@ -2,7 +2,7 @@ import axios from "axios";
 
 const baseURLs = {
   development: "http://localhost:7000/",
-  production: "",
+  production: "https://job-posting-board-84yv.onrender.com",
 };
 
 const baseURL =
