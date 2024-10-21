@@ -25,7 +25,7 @@ const OtpVerification = () => {
         try {
             setIsLoading(true);
             const phone = "+91" + localStorage.getItem('jdp');
-            const response = await apiClient.post('http://localhost:7000/api/signup/company-verification', {
+            const response = await apiClient.post('/api/signup/company-verification', {
                 emailOtp,
                 mobileOtp: undefined,
                 phone
@@ -51,7 +51,7 @@ const OtpVerification = () => {
         try {
             setIsLoading(true);
             const phone = "+91" + localStorage.getItem('jdp');
-            const response = await apiClient.post('http://localhost:7000/api/signup/company-verification', {
+            const response = await apiClient.post('/api/signup/company-verification', {
                 emailOtp: undefined,
                 mobileOtp,
                 phone
