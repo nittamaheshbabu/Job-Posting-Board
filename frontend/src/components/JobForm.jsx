@@ -59,7 +59,7 @@ const JobForm = () => {
       
 
       const response = await apiClient.post(
-        "http://localhost:7000/api/job/create-job",
+        "/api/job/create-job",
         formData,
         {
           headers: {
